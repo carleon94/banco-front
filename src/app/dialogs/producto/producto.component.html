@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Producto</h2>
+<mat-dialog-content>
+    <div *ngIf="producto">
+        Nombre: <p>{{producto.nombre}}</p>
+        Codigo: <p>{{producto.codigo}}</p>
+        Descripcion: <p>{{producto.descripcion }}</p>
+        Precio: <p>{{producto.precio}}</p>
+        Categoria: <p>{{producto.categoria?.nombre ?? ''}}</p>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
